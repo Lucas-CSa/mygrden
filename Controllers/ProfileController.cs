@@ -62,7 +62,7 @@ namespace mygarden.Controllers
             
            
             
-            using (MySqlConnection conn = new MySqlConnection("Server=localhost;Database=mygarden;Uid=root;Pwd=root;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=localhost;Database=mygardenfuncional;Uid=root;Pwd=root;"))
             {
                 conn.Open();
                 using (MySqlCommand cmd = new MySqlCommand("INSERT INTO produtor (ProdNom, ProdBairro, ProdEnd, ProdNum, ProdReg, ProdTel, ProdDesc, ProdFrut, ProdLeg, ProdVerd, ProdOutr) VALUES (@ProdNom, @ProdBairro, @ProdEnd, @ProdNum, @ProdReg, @ProdTel, @ProdDesc, @ProdFrut, @ProdLeg, @ProdVerd, @ProdOutr)", conn))

@@ -66,7 +66,7 @@ namespace mygarden.Controllers
 
 
 
-            using (MySqlConnection conn = new MySqlConnection("Server=localhost;Database=mygarden;Uid=root;Pwd=root;")) {
+            using (MySqlConnection conn = new MySqlConnection("Server=localhost;Database=mygardenfuncional;Uid=root;Pwd=root;")) {
                 conn.Open();
                 using (MySqlCommand cmd = new MySqlCommand(cmd_string, conn)) {
                     using (MySqlDataReader dataReader = cmd.ExecuteReader()) {

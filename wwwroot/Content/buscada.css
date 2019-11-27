@@ -84,6 +84,12 @@
         top: 7px;
     }
 
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
 
 .select-items div, .select-selected {
     color: #2ecc71;
@@ -112,7 +118,6 @@
 
 .options-wrapper {
     background-color: #2ecc71;
-    width: 37%;
     height: 150px;
     display: flex;
     justify-content: center;
